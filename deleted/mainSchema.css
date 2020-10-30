@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	/*kad nebutu papildomu nereikalingu tarpu*/
+}
+
+
+body{
+
+ 	background: #FC6;
+
+} 
+
+header{
+	position: static !important; 
+}
+
+#menu{ 
+
+	margin: auto;/* centruoti */
+	padding: auto;
+ }
+
+#reklama{
+	float: left;
+	border: 2px solid white;
+	/*inherit*/
+	background: black;
+	padding: 0 10px;
+	width: 30%;
+	height: 300px;
+}
+
+
+.logo{
+	background: blue;
+
+}
+
+#schema{
+
+		color: white;
+	background: black;
+	border: 2px solid white;
+
+	margin: 10px auto;/* centruoti */
+	width:  800px; 
+
+}
+
+
+
+#header, #footerSchema {
+
+	background: black;
+	text-align: center;
+	width: 100%;
+
+}
+
+#header {  background: #FC6;
+		}
+
+#header h1 { padding: 15px; }
+
+#subhead{
+  font-family: 'Vast Shadow', cursive;
+  font-size: 16px;
+  line-height: 1.5;
+
+
+  padding: 0 10px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+#footerSchema { 
+background:  #FFF166;
+border: 2px solid white;
+padding:  0px 10px; }
+
+#content{
+/*		display: flex;
+	flex-wrap: wrap; */
+		color: white;
+	background: black;
+
+	border: 2px solid white;
+
+	
+	padding: 0 10px;
+	min-height: 300px;
+	float: left;
+	width: 70%;
+}
+
+
+
+#header, #footerSchema { 
+clear: both;
+text-align: center; 
+width: 100%;
+ }

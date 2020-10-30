@@ -1,0 +1,197 @@
+/* 
+//////////////////////////////////////////////
+/////////////Header Fono nustatymai////////////
+////////////////////////////////////////////////
+*/
+
+.header {
+    background: #343c4e; /*juodas fonas*/
+    background-image: url("../img/bg/bg-header.jpg"); /* .. - reiskia mes prieinam i virsu is css failiuko(iseinam is jo) */
+    background-repeat: no-repeat; /*kad fonas nesikartotu(nesidubliuoti), jeigu ekranas yra padidintas.*/
+    background-position: center; /*centruojam*/
+    background-size: cover; /*kad atgaivintu savo vaizda, taip kaip jis turi buti(proporcingai pasiguls)*/
+
+    height: 100vh; /* padidinam dydi, vh - yra lygi vienetui brauzerio lango..*/
+    min-height: 400px;
+
+    color: #fff; /*teksto*/
+    text-align: center;
+
+    /*konteineriui- divui header priskiriam flexus*/
+    display: flex; /*Lyginam vertikaliskai nepalaiko senus browserius*/
+    flex-direction: column; /*kad parametrai butu sulygioti stulpeliu*/
+    align-items: center; /* horizontaliskai lyginam */
+    justify-content: center; /* centralizuojam */
+
+    position: relative; /*del viso pikto priskiriam tevo laipsni Headeriui*/
+}
+
+/* 
+//////////////////////////////////////////////
+/////////////Teksto Stilizavimas///////////////
+//////////////////////////////#fff//////////////////
+*/
+
+.header__title {
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: "Vast Shadow", cursive;
+    margin-top: -50px; /* biski pastumiau i virsu, nes ant dideliu ekranu, po posukimo i apacia labai daug veitos lieka virsutinioj dali(dizaino reikaliukai)*/
+    color: #050002;
+    background: rgba(0, 214, 170, 0.7);
+}
+
+.header__citata {
+    font-size: 28px;
+    margin-bottom: 42px;
+    color: #050002;
+    font-family: "Vast Shadow", cursive;
+    background: rgba(0, 214, 170, 0.7);
+}
+
+.header__arrow{
+    font-size: 48px;
+    background: rgba(0, 214, 170, 0.7);
+    color: black;
+
+    width: 60px;
+    height: 50px;
+    margin-left: -30px; /*60-30*/
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+.header__arrow__line{
+    width: 100%;
+}
+
+
+
+/* 
+//////////////////////////////////////////////
+/////////////PORTFOLIO nustatymai////////////
+////////////////////////////////////////////////
+*/
+
+.col-4-item {
+    width: 400px;
+    margin-right: 30px;
+    float: left;
+}
+
+.col-4-item:last-child {
+    margin-right: 0px;
+}
+
+.col-4-item {
+    box-sizing: content-box;
+
+    box-sizing: border-box;
+
+    width: 33%;
+    margin: 0;
+    margin-bottom: 1%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.portfolio {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: inherit;
+}
+
+.title {
+    font-size: 46px;
+    margin-bottom: 60px;
+    font-family: "Vast Shadow", cursive;
+    text-align: center;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+}
+
+.portfolio-item__img {
+    margin-bottom: 17px;
+}
+
+.portfolio-item__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item__title {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.portfolio-item__title a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s ease-out;
+}
+
+.portfolio-item__title a:hover {
+    color: Red;
+    border-color: rgba(0, 74, 194, 0.3);
+}
+
+/* 
+//////////////////////////////////////////////
+/////////////MEDIA////////////
+////////////////////////////////////////////////
+*/
+
+@media (max-width: 1250px) {
+    .col-4-item {
+        width: 100%;
+    }
+
+    .portfolio-item__img img {
+        width: 75%;
+        height: auto;
+    }
+
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header__title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .header__citata {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 170px) {
+    .title {
+        word-wrap: break-word;
+        font-size: 20px;
+    }
+
+    .portfolio-item__img img {
+        width: 80%;
+        height: 10vh;
+    }
+}

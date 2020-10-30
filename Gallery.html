@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+
+        <meta http-aquiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Normalaizeris turi visada buti pajungtas pries kitus stilius ...
+  
+  Standartizacija, bei normalizacija stiliu, tai reikalinga kad kiekvienas brauzeris atvaizduotu musu produkta(stilius) taip kaip reikiant
+  -->
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+        <!-- Stiliu prijungimas -->
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/mainGallery.css" />
+        <!-- Fono keitimas per https://fonts.google.com/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheetva" />
+        <!-- paprasta piktograma prie musu tinklapio -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+
+        <style>
+            /*.................Background paveikliuko nustatymai.....................*/
+            body {
+                justify-content: center;
+                background-image: url("img/bg/bg-header.jpg"); /*back*/
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--
+                    Fullscreen Overlay Navigation Menu Bar
+-->
+        <div id="menu">
+            <header>
+                <img src="img/logo/logo baseinas.png" class="logo" />
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </header>
+        </div>
+
+        <div id="page">
+            <div id="header">
+                <h1>Gallery</h1>
+                <div id="subhead">View part of my works</div>
+            </div>
+
+            <div id="container-root">
+                <div id="content">
+                    <!-- Photo Grid -->
+                    <div class="row-gallery">
+                        <div  class="column">
+                            <img class="item" src="img/gallery/photo1.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo3.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo6.jpg" style="width: 100%;" />
+                        </div>
+                        <div class="column">
+                            <img class="item" src="img/gallery/photo4.jpg" style="width: 100%;" />
+                            <img class="item"  src="img/gallery/photo2.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo1.jpg" style="width: 100%;" />
+                        </div>
+                        <div class="column">
+                            <img class="item" src="img/gallery/photo1.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo3.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo6.jpg" style="width: 100%;" />
+                        </div>
+                        <div class="column">
+                            <img class="item" src="img/gallery/photo4.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo2.jpg" style="width: 100%;" />
+                            <img class="item" src="img/gallery/photo1.jpg" style="width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reklama">
+                    <a href="Cv.html">
+                        <img src="Daniel_Vaskevic_CV.png" alt="Mano CV" title="Click here to see PDF"/ >
+                    </a>
+                </div>
+            </div>
+
+            <!--
+                    FOOTER
+-->
+            <!-- cia bus foninis paveiksliukas -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="footer__name">Daniel Vaskevic</p>
+                            <p>HTML layout and website development</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer__social">My social media:</p>
+                            <p class="footer__social__icons">
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <!--   <a href="#" targer="_blank">
+            <i class="fab fa-instagram"></i>
+           </a>
+           
+           <a href="#" targer="_blank">
+            <i class="fab fa-youtube"></i>
+           </a> -->
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div><a href="#" class="button" target="_blank">-_Contact me_-</a></div>
+
+                            <p>
+                                Want more information?<br />
+                                Write me
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+
+        <meta http-aquiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Normalaizeris turi visada buti pajungtas pries kitus stilius ...
+  
+  Standartizacija, bei normalizacija stiliu, tai reikalinga kad kiekvienas brauzeris atvaizduotu musu produkta(stilius) taip kaip reikiant
+  -->
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+        <!-- Stiliu prijungimas -->
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/mainContact.css" />
+        <!-- Fono keitimas per https://fonts.google.com/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheetva" />
+        <!-- paprasta piktograma prie musu tinklapio -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+
+        <style>
+            /*.................Background paveikliuko nustatymai.....................*/
+            body {
+                justify-content: center;
+                background-image: url("img/bg/bg-header.jpg"); /*back*/
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+                    Fullscreen Overlay Navigation Menu Bar
+-->
+        <div id="menu">
+            <header>
+                <img src="img/logo/logo baseinas.png" class="logo" />
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </header>
+        </div>
+
+        <div id="page">
+            <div id="header">
+                <h1>Contact</h1>
+                <div id="subhead">Contact me</div>
+            </div>
+
+            <div id="container-root">
+                <div id="content">
+                    <p>Hello, I am</p>
+                    <h1>
+                        <b>
+                            <p>Daniel Vaškevič</p>
+                        </b>
+                    </h1>
+                    <h3>| Student | Programmer |</h3>
+
+                    <!--palikuonys
+        darome, kad tam tikra savybe(style) turėtų tik kokio nors elemento „palikuonys“-->
+                    <ul>
+                        <li></li>
+                        <ul>
+                            <li>♪♪Do what a few do ♪♪</li>
+                            <ul>
+                                <li>♪♪To have what a few have♪♪</li>
+                            </ul>
+                        </ul>
+                    </ul>
+
+                    <img src="img/portfolio/citata.jpg" alt="Citatos Photo" width="100%" height="55%" />
+
+                    <!--<p>Daug teksto</p>-->
+                </div>
+
+                <div id="reklama">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.2190418143755!2d25.261651115858967!3d54.68817298028208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94099f9982f3%3A0x7bcb82ce6d0882d!2sJ.%20Jasinskio%20g.%2C%20Vilnius!5e0!3m2!1sen!2slt!4v1601812826372!5m2!1sen!2slt"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+            </div>
+
+            <!--
+                    FOOTER
+-->
+            <!-- cia bus foninis paveiksliukas -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="footer__name">Daniel Vaskevic</p>
+                            <p>HTML layout and website development</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer__social">My social media:</p>
+                            <p class="footer__social__icons">
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <!--   <a href="#" targer="_blank">
+            <i class="fab fa-instagram"></i>
+           </a>
+           
+           <a href="#" targer="_blank">
+            <i class="fab fa-youtube"></i>
+           </a> -->
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div><a href="#" class="button" target="_blank">-_Contact me_-</a></div>
+
+                            <p>
+                                Want more information?<br />
+                                Write me
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

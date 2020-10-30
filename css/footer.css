@@ -1,0 +1,178 @@
+img {
+    display: inline-block; /* panaikinamas papildomas tarpas paveiksliukuose kuris buvo anksciau*/
+}
+
+/* 
+//////////////////////////////////////////////
+/////////////FOOTER////////////
+////////////////////////////////////////////////
+*/
+
+.footer {
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 90px;
+    padding-bottom: 10px;
+
+    border: 2px solid white;
+    padding: 10px 0;
+
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+.footer p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+p.footer__name {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: normal;
+    font-family: "Vast Shadow", cursive;
+}
+
+p.footer__social {
+    color: #fff;
+}
+
+p.footer__social__icons {
+    color: #fff;
+    font-size: 32px;
+}
+
+p.footer__social__icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s ease-out;
+}
+
+p.footer__social__icons a:last-child {
+    margin-right: 0px;
+}
+
+p.footer__social__icons a:hover {
+    color: var(--background);
+}
+
+.button {
+    font-weight: 700;
+    text-decoration: none;
+    color: White;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    display: inline-block;
+
+    border-width: 2px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    margin-bottom: 13px;
+
+    transition: 0.3s ease-out;
+}
+
+.button:hover {
+    color: var(--background);
+    border-color: green;
+}
+
+.col-4 {
+    width: 400px;
+    margin-right: 30px;
+    float: left;
+}
+
+.col-4:last-child {
+    margin-right: 0px;
+}
+
+.col-4 {
+    box-sizing: content-box;
+
+    box-sizing: border-box;
+
+    width: 33%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.portfolio-item__text p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+//////////////////////////////////////////////
+/////////////GRID////////////
+////////////////////////////////////////////////
+*/
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media (max-width: 1280px) {
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 230px) {
+    .header__title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .header__citata {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .button {
+        display: none !important;
+        font-weight: 0 !important;
+        text-transform: lowercase !important;
+        float: left !important;
+        letter-spacing: 0px !important;
+        width: 0 !important;
+        height: 0 !important;
+    }
+}

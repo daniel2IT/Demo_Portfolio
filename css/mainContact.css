@@ -1,0 +1,188 @@
+/*...................................................*/
+
+#subhead {
+    font-family: "Vast Shadow", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 280px;
+
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+
+    padding: 0 10px;
+    text-align: center;
+}
+
+img {
+    display: inline-block; /* panaikinamas papildomas tarpas paveiksliukuose kuris buvo anksciau*/
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*kad nebutu papildomu nereikalingu tarpu*/
+}
+
+/*...................................................*/
+
+#page {
+    border: 2px solid white;
+    background: black; /*rausva spalva*/
+
+    margin: 0 auto; /* centruoti */
+    padding: auto;
+    width: 80%;
+    height: 100%;
+}
+/*...................MENU...........................*/
+#reklama {
+    float: left;
+
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+    padding: 0 10px;
+    width: 33%;
+    height: 600px;
+}
+
+#reklama iframe {
+    width: 100%;
+    height: 100%;
+}
+/*...................................................*/
+
+#header {
+    padding: 7%;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+/*.................FC6 oranzine spalva.....................*/
+#header {
+    background: black !important;
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+}
+
+#header h1 {
+    padding: 10px;
+}
+
+/*palikuonys
+darome, kad tam tikra savybe(style) turėtų tik
+ kokio nors elemento „palikuonys“ */
+ul ul li {
+    color: green;
+}
+ul ul ul li {
+    color: blue;
+}
+
+#content {
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+
+    float: left;
+    height: 600px;
+
+    text-align: center;
+    color: white;
+    width: 67%;
+
+    padding: 10px 5px;
+}
+
+#content h2 {
+    margin: 10px 0;
+}
+
+#header {
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+/*Pakopiniais stiliais panaikinkite ženklinimą ir paraštes:*/
+
+.footer {
+    border: 2px solid white;
+    padding: 10px 0;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1290px) {
+    #reklama {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #subhead {
+        min-width: auto;
+        white-space: pre-wrap; /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+    #header {
+        padding-top: 10%;
+    }
+    .container-root {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    #reklama a img {
+        width: 90%;
+    }
+    #header, h1, h2, h3 {
+        min-width: auto;
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+    #content {
+    height: auto;
+    } 
+    #content img {
+        height: auto;   
+    }
+    #reklama a img {
+        width: 100%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .row-gallery {
+        height: auto;
+    }
+
+    #content {
+        height: auto;
+    }
+}
+
+/*For Header nebutinas*/
+@media (max-width: 400px) {
+    #header {
+        padding-top: 15%;
+    }
+}

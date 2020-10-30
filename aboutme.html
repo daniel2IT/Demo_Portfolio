@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About me</title>
+
+        <meta http-aquiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Normalaizeris turi visada buti pajungtas pries kitus stilius ...
+  
+  Standartizacija, bei normalizacija stiliu, tai reikalinga kad kiekvienas brauzeris atvaizduotu musu produkta(stilius) taip kaip reikiant
+  -->
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+        <!-- Stiliu prijungimas -->
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/mainAbout.css" />
+        <!-- Fono keitimas per https://fonts.google.com/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheetva" />
+        <!-- paprasta piktograma prie musu tinklapio -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+
+        <style>
+            #reklama:hover a img {
+                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                filter: contrast(110%);
+                cursor: pointer;
+                opacity: 0.9;
+            }
+
+            /*.................Background paveikliuko nustatymai.....................*/
+            body {
+                justify-content: center;
+                background-image: url("img/bg/bg-header.jpg"); /*back*/
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+            }
+
+            pre {
+                white-space: pre-wrap; /* Since CSS 2.1 */
+                white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+                white-space: -pre-wrap; /* Opera 4-6 */
+                white-space: -o-pre-wrap; /* Opera 7 */
+                word-wrap: break-word; /* Internet Explorer 5.5+ */
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+                    Fullscreen Overlay Navigation Menu Bar
+-->
+        <div id="menu">
+            <header>
+                <img src="img/logo/logo baseinas.png" class="logo" />
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+            </header>
+        </div>
+
+        <div id="page">
+            <div id="header">
+                <h1>About Me</h1>
+                <div id="subhead">View more information about me</div>
+            </div>
+
+            <div id="content">
+                <pre>
+<h2><p>
+  Hello, I am
+  Daniel Vaškevič
+|Student|Programmer|</p></h2>
+      C# ->(<i>.Net Core/.NET Framework</i>)
+      SQL ->(<i>PostgreSQL, phpMyAdmin, H2 etc.</i>)
+      MySQL workbench ->(<i>...</i>)
+      MS SQL Server ->(<i>...</i>)
+
+      RESTful API ->(<i>XML/JSON/HTTP Methods(Postman,, etc.)</i>)
+      ASP.NET Core MVC ->(<i>...</i>)
+
+      HTML ->(<i>Sublime Text 3 text editor</i>)
+      CSS ->(<i>Sublime Text 3 text editor</i>)
+
+      JavaScript ->(<i>in progress</i>)
+      Angular /or/ React JS ->(<i>in progress</i>)
+
+      <h3>Other Knowledge of (<i>worked with</i>):</h3>
+      ->Agile knowledge(planning/design -->Trello(<i>Gantt chart)</i>)
+      ->WebAPI (had made with IntelliJ IDEA --><i>'RESTful Web service'</i> --->using <i>Java language:>
+      (Spring Boot, Tomcat, Maven)</i>
+
+      ->VEGAS Pro - <i>Video Maker</i> (Have/using -->for own<i> YouTube channel)</i>
+      ->AutoCAD (1 year experience - <i>2D/3D models</i>)
+      ->CorelDRAW (had made a lot of own <i>logo</i>)
+      ->FL Studio (had made own <i>tracks</i>)
+      ->C++ (1 year experience)
+
+      ->Ruby on Rails <i>(Rubocop/Unit Test/ ... -'in progress')</i>
+      ->Oracle VM VirtualBox ("Build secure systems with Kali Linux" - <i>'in progress'</i>)
+
+      <h3> !𝙏𝙝𝙖𝙣𝙠 Y𝙤𝙪 𝙛𝙤𝙧 Y𝙤𝙪𝙧 𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩!
+
+        ♪♪<i>Do what a few do</i>♪♪
+         ♪♪<i>To have what a few have</i>♪♪</h3> 
+
+</pre>
+            </div>
+
+            <div id="reklama">
+                <a href="Cv.html">
+                    <img src="Daniel_Vaskevic_CV.png" alt="Mano CV" title="Click here to see PDF"/ >
+                </a>
+            </div>
+
+            <!--
+                    FOOTER
+-->
+            <!-- cia bus foninis paveiksliukas -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="footer__name">Daniel Vaskevic</p>
+                            <p>HTML layout and website development</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer__social">My social media:</p>
+                            <p class="footer__social__icons">
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <!--   <a href="#" targer="_blank">
+            <i class="fab fa-instagram"></i>
+           </a>
+           
+           <a href="#" targer="_blank">
+            <i class="fab fa-youtube"></i>
+           </a> -->
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div><a href="#" class="button" target="_blank">-_Contact me_-</a></div>
+
+                            <p>
+                                Want more information?<br />
+                                Write me
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

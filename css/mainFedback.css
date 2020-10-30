@@ -1,0 +1,221 @@
+/*...................................................*/
+
+#subhead {
+    font-family: "Vast Shadow", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 280px;
+
+    color: white;
+    background: black;
+    border: 2px solid white;
+    padding: 0 10px;
+    text-align: center;
+}
+
+img {
+    display: inline-block; /* panaikinamas papildomas tarpas paveiksliukuose kuris buvo anksciau*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*kad nebutu papildomu nereikalingu tarpu*/
+}
+
+/*...................................................*/
+#page {
+    color: white;
+    background: black;
+    border: 2px solid white;
+
+    margin: 0 auto; /* centruoti */
+    padding: auto;
+    width: 80%;
+    height: 100%;
+}
+/*...................MENU...........................*/
+nav a {
+    font-size: 1.4em;
+    display: flex;
+}
+
+/*..............................................*/
+
+#reklama {
+    float: left;
+    color: white;
+    background: black;
+    height: 500px;
+    padding: 0 10px;
+    width: 30%;
+
+    max-height: 500px;
+}
+
+#reklama img {
+    height: 100%;
+}
+
+/*...................................................*/
+#header {
+    padding: 7%;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+}
+/*.................FC6 oranzine spalva.....................*/
+#header {
+    background: #ffab04;
+}
+
+#header h1 {
+    padding: 10px;
+}
+
+#content {
+    /*    display: flex;
+  flex-wrap: wrap; */
+    color: white;
+    background: black;
+
+    float: left;
+    height: 500px;
+    padding: 0 10px;
+    text-align: center;
+    width: 70%;
+}
+
+#content h2 {
+    margin: 10px 0;
+}
+
+#header {
+    color: white;
+    background: black;
+    border: 2px solid white;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+/*.................Background paveikliuko nustatymai.....................*/
+
+body {
+    justify-content: center;
+    background-image: url("img/bg/bg-header.jpg"); /*back*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+}
+
+/*Pakopiniais stiliais panaikinkite ženklinimą ir paraštes:*/
+
+/*.................Atsiliepimu Stile.....................*/
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label {
+    /*  padding: 12px 12px 12px 0; */
+    display: inline-block;
+}
+
+.container-feedback {
+    border-radius: 5px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row-feedback:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#content input[type="submit"] {
+    background-color: #4caf50; /*mygtuko spalva*/
+    color: white; /*teksto spalva*/
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer; /*kursioriuk rankyte*/
+    float: right;
+}
+
+#content input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 1200px) {
+    #reklama {
+        width: 100% !important;
+    }
+    #content {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 850px) {
+    #header {
+        padding-top: 11%;
+    }
+    #subhead {
+        min-width: auto;
+    }
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+        width: 100%;
+    }
+    .container-root {
+        display: flex;
+        flex-direction: column;
+    }
+    #content {
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #header {
+        padding-top: 18%;
+    }
+}
+
+
+@media (max-width: 450px){  
+#header {
+    padding-top: 30%;
+    min-width: auto;
+}
+}
+
+@media (max-width: 250px){  
+#header, h2, p {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+}
