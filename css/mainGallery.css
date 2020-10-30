@@ -232,7 +232,9 @@ pre {
     flex-direction: column;
     justify-content: space-around;
 }
- 
+ .column:last-child{
+    display: none;
+ }
 
 
 }

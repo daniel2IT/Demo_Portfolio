@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact</title>
+        <title>About me</title>
 
         <meta http-aquiv="X-UA-Compatible" content="IE=edge" />
         <!-- Normalaizeris turi visada buti pajungtas pries kitus stilius ...
@@ -14,24 +14,40 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
 
         <!-- Stiliu prijungimas -->
-        <link rel="stylesheet" href="css/menu.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/mainContact.css" />
+        <link rel="stylesheet" href="../css/menu.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/mainAbout.css" />
         <!-- Fono keitimas per https://fonts.google.com/ -->
         <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheetva" />
         <!-- paprasta piktograma prie musu tinklapio -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
 
         <style>
+            #reklama:hover a img {
+                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                filter: contrast(110%);
+                cursor: pointer;
+                opacity: 0.9;
+            }
+
             /*.................Background paveikliuko nustatymai.....................*/
             body {
                 justify-content: center;
-                background-image: url("img/bg/bg-header.jpg"); /*back*/
+                background-image: url("../img/bg/bg-header.jpg"); /*back*/
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+            }
+
+            pre {
+                white-space: pre-wrap; /* Since CSS 2.1 */
+                white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+                white-space: -pre-wrap; /* Opera 4-6 */
+                white-space: -o-pre-wrap; /* Opera 7 */
+                word-wrap: break-word; /* Internet Explorer 5.5+ */
+                font-size: 18px;
             }
         </style>
     </head>
@@ -41,11 +57,11 @@
 -->
         <div id="menu">
             <header>
-                <img src="img/logo/logo baseinas.png" class="logo" />
+                <img src="../img/logo/logo baseinas.png" class="logo" />
                 <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="aboutme.html">About</a></li>
                         <li><a href="feedback.html">Feedback</a></li>
                         <li><a href="Gallery.html">Gallery</a></li>
@@ -60,49 +76,56 @@
 
         <div id="page">
             <div id="header">
-                <h1>Contact</h1>
-                <div id="subhead">Contact me</div>
+                <h1>About Me</h1>
+                <div id="subhead">View more information about me</div>
             </div>
 
-            <div id="container-root">
-                <div id="content">
-                    <p>Hello, I am</p>
-                    <h1>
-                        <b>
-                            <p>Daniel Vaškevič</p>
-                        </b>
-                    </h1>
-                    <h3>| Student | Programmer |</h3>
+            <div id="content">
+                <pre>
+<h2><p>
+  Hello, I am
+  Daniel Vaškevič
+|Student|Programmer|</p></h2>
+      C# ->(<i>.Net Core/.NET Framework</i>)
+      SQL ->(<i>PostgreSQL, phpMyAdmin, H2 etc.</i>)
+      MySQL workbench ->(<i>...</i>)
+      MS SQL Server ->(<i>...</i>)
 
-                    <!--palikuonys
-        darome, kad tam tikra savybe(style) turėtų tik kokio nors elemento „palikuonys“-->
-                    <ul>
-                        <li></li>
-                        <ul>
-                            <li>♪♪Do what a few do ♪♪</li>
-                            <ul>
-                                <li>♪♪To have what a few have♪♪</li>
-                            </ul>
-                        </ul>
-                    </ul>
+      RESTful API ->(<i>XML/JSON/HTTP Methods(Postman,, etc.)</i>)
+      ASP.NET Core MVC ->(<i>...</i>)
 
-                    <img src="img/portfolio/citata.jpg" alt="Citatos Photo" width="100%" height="55%" />
+      HTML ->(<i>Sublime Text 3 text editor</i>)
+      CSS ->(<i>Sublime Text 3 text editor</i>)
 
-                    <!--<p>Daug teksto</p>-->
-                </div>
+      JavaScript ->(<i>in progress</i>)
+      Angular /or/ React JS ->(<i>in progress</i>)
 
-                <div id="reklama">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.2190418143755!2d25.261651115858967!3d54.68817298028208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd94099f9982f3%3A0x7bcb82ce6d0882d!2sJ.%20Jasinskio%20g.%2C%20Vilnius!5e0!3m2!1sen!2slt!4v1601812826372!5m2!1sen!2slt"
-                        width="100%"
-                        height="100%"
-                        frameborder="0"
-                        style="border: 0;"
-                        allowfullscreen=""
-                        aria-hidden="false"
-                        tabindex="0"
-                    ></iframe>
-                </div>
+      <h3>Other Knowledge of (<i>worked with</i>):</h3>
+      ->Agile knowledge(planning/design -->Trello(<i>Gantt chart)</i>)
+      ->WebAPI (had made with IntelliJ IDEA --><i>'RESTful Web service'</i> --->using <i>Java language:>
+      (Spring Boot, Tomcat, Maven)</i>
+
+      ->VEGAS Pro - <i>Video Maker</i> (Have/using -->for own<i> YouTube channel)</i>
+      ->AutoCAD (1 year experience - <i>2D/3D models</i>)
+      ->CorelDRAW (had made a lot of own <i>logo</i>)
+      ->FL Studio (had made own <i>tracks</i>)
+      ->C++ (1 year experience)
+
+      ->Ruby on Rails <i>(Rubocop/Unit Test/ ... -'in progress')</i>
+      ->Oracle VM VirtualBox ("Build secure systems with Kali Linux" - <i>'in progress'</i>)
+
+      <h3> !𝙏𝙝𝙖𝙣𝙠 Y𝙤𝙪 𝙛𝙤𝙧 Y𝙤𝙪𝙧 𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩!
+
+        ♪♪<i>Do what a few do</i>♪♪
+         ♪♪<i>To have what a few have</i>♪♪</h3> 
+
+</pre>
+            </div>
+
+            <div id="reklama">
+                <a href="Cv.html">
+                    <img src="../Daniel_Vaskevic_CV.png" alt="Mano CV" title="Click here to see PDF"/ >
+                </a>
             </div>
 
             <!--
