@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /html/aboutme.html/
+Disallow: /html/feedback.html/
+Disallow: /html/gallery.html/
+Disallow: /html/contact.html/
+Disallow: /html/game.html/
+
+Sitemap: https://daniel2it.github.io/Demo_Portfolio/
