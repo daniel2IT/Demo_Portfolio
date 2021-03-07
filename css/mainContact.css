@@ -1,0 +1,325 @@
+/*...................................................*/
+
+#subhead {
+    font-family: "Vast Shadow", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 100%;
+    width: 30%;
+    margin: 0 auto;
+
+    /*inherit*/
+    background: inherit;
+
+    padding: 0 10px;
+    text-align: center;
+}
+
+img {
+    display: inline-block; /* panaikinamas papildomas tarpas paveiksliukuose kuris buvo anksciau*/
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*kad nebutu papildomu nereikalingu tarpu*/
+}
+
+/*...................................................*/
+
+#page {
+    border: 2px solid white;
+    background: black; /*rausva spalva*/
+
+    margin: 0 auto; /* centruoti */
+    padding: auto;
+    width: 80%;
+    height: 100%;
+}
+/*...................MENU...........................*/
+#reklama {
+    float: left;
+
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+
+    width: 33%;
+    height: auto;
+}
+
+#reklama iframe {
+    width: 100%;
+    height: 100%;
+}
+/*..............2.....................................*/
+
+
+/*.................FC6 oranzine spalva.....................*/
+#header {
+     padding: 9% 0 3% 0;
+
+    text-align: center;
+    width: 100%;
+    color: white;
+
+    background: black !important;
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+
+    clear: both;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+/*palikuonys
+darome, kad tam tikra savybe(style) turėtų tik
+ kokio nors elemento „palikuonys“ */
+ul ul li {
+    color: yellow;
+}
+ul ul ul li {
+    color: yellow;
+}
+
+#content {
+    /*inherit*/
+    background: inherit;
+    border: inherit;
+
+    float: left;
+   
+
+    text-align: center;
+    color: white;
+    width: 67%;
+    height: 100%;
+    padding: 10px 5px;
+}
+
+#content h2 {
+    margin: 10px 0;
+}
+
+
+
+/*Pakopiniais stiliais panaikinkite ženklinimą ir paraštes:*/
+.footer {
+    border: 2px solid white;
+    padding: 10px 0;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media (max-width: 1290px) {
+
+  #subhead button {
+      width: 50% !important;
+    }
+
+    #mySidebar{
+    display: flex;
+    flex-direction: column ;
+    width: 50%;
+    margin: 0 auto;
+    }
+
+
+    #reklama {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+      #header {
+        padding-top: 20%;
+    }
+    #reklama a img {
+        width: 90%;
+    }
+    #header, h1, h2, h3 {
+        min-width: auto;
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+    #content {
+    height: auto;
+    } 
+    #content img {
+        height: auto;   
+    }
+    #reklama a img {
+        width: 100%;
+    }
+
+
+    #mySidebar{
+    display: flex;
+    flex-direction: column ;
+    width: 70%;
+    margin: 0 auto;
+    }
+
+    #subhead button {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .row-gallery {
+        height: auto;
+    }
+
+    #content {
+        height: auto;
+    }
+}
+
+/*For Header nebutinas*/
+@media (max-width: 400px) {
+    #header {
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: 300px) {
+    #page {
+        width: 90%;
+    }
+
+}
+
+
+.darkmode--activated label,
+.darkmode--activated .footer a,
+.darkmode--activated .first-container h1, 
+.darkmode--activated .second-container h1
+{
+    color: black;
+}
+
+
+
+.darkmode-background {
+    background: #000 !important;
+  }
+
+.popup {
+     /* width: 80%; */
+    padding: 15px;
+    /* left: 0; */
+    margin-left: 5%;
+    border: 1px solid rgb(1,82,73);
+    border-radius: 10px;
+    color: rgb(1,82,73);
+    background: white;
+    position: absolute;
+    top: 50%;
+    box-shadow: 5px 5px 5px #000;
+    z-index: 10001;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 10000;
+  display :none;
+}
+
+@media (min-width: 300px) {
+  .popup {
+    width: 53%;
+  }
+}
+@media (min-width: 500px) {
+  .popup {
+     width: 33.33333%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .popup {
+    width: 50%;
+    margin-left: 33.33333%;
+  }
+}
+
+.dialog-btn {
+  background-color:#44B78B;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #44B78B;
+  border-radius: 10px;
+    height: 8vh;
+    width: 17vh;
+}
+.dialog-btn:hover {
+  background-color:#015249;
+  cursor: pointer;
+}
+
+
+
+
+
+
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Roboto is Material's default font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#subhead button,
+.dropdown-item button {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #6200ee;
+  margin-bottom: 0.2cm; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+ border-radius: 2.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#subhead button {
+      width: 20%;
+}

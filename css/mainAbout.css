@@ -1,0 +1,557 @@
+/*...................................................*/
+
+#subhead {
+    font-family: "Vast Shadow", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 280px;
+}
+
+img {
+    display: inline-block; /* panaikinamas papildomas tarpas paveiksliukuose kuris buvo anksciau*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*kad nebutu papildomu nereikalingu tarpu*/
+}
+
+ul{
+    list-style: none; 
+}
+/*...................................................*/
+
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed");
+
+
+.my-flex-container{
+        justify-content: space-evenly;
+}
+
+.my-flex-second-container, .my-flex-second-container-1{
+    width: 100%;
+}
+
+.second-first-Part{
+    width: 45%;
+    margin-left: 2%;
+}
+
+
+
+.second-second-Part{
+    width: 45%;
+     margin-left: 2%;
+}
+.main-container .p-2 {
+    padding: 0rem!important;
+}
+
+/* Large rounded green border */
+hr.new5 {
+  border: 10px solid green;
+  border-radius: 5px;
+}
+
+hr.new6 {
+  border: 10px solid red;
+  border-radius: 5px;
+}
+
+
+.second-container-data{
+    width: 100%;
+}
+
+.main-container {
+
+    height: 100%;
+    width: 100%;
+  transform: translate(0%, 0%);
+  color: #fff !important;
+}
+
+
+
+.first-container, .second-container {
+  cursor: pointer;
+/*   position: relative; */
+      width: 100%;
+      padding-top: 2%;
+}
+
+.my-flex-container .p-2 {
+    padding: 0.5rem!important;
+}
+
+
+.first-container h1, .second-container h1 {
+    width: 100%;
+  letter-spacing: 2px;
+  font-size: 4vw;
+}
+
+.first-container {
+  margin-bottom: 15px;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+}
+
+span:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  z-index: -5;
+}
+
+.share:hover > h1 > span:nth-child(1):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 100ms;
+  transform: rotate(-25deg);
+}
+
+.share:hover > h1 > span:nth-child(1) {
+  color: #39393B;
+  transition-delay: 110ms;
+}
+
+.share:hover > h1 > span:nth-child(2):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 200ms;
+  transform: rotate(-20deg);
+}
+
+.share:hover > h1 > span:nth-child(2) {
+  color: #39393B;
+  transition-delay: 220ms;
+}
+
+.share:hover > h1 > span:nth-child(3):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 300ms;
+  transform: rotate(-15deg);
+}
+
+.share:hover > h1 > span:nth-child(3) {
+  color: #39393B;
+  transition-delay: 330ms;
+}
+
+.share:hover > h1 > span:nth-child(4):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 400ms;
+  transform: rotate(-10deg);
+}
+
+.share:hover > h1 > span:nth-child(4) {
+  color: #39393B;
+  transition-delay: 440ms;
+}
+
+.share:hover > h1 > span:nth-child(5):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 500ms;
+  transform: rotate(-5deg);
+}
+
+.share:hover > h1 > span:nth-child(5) {
+  color: #39393B;
+  transition-delay: 550ms;
+}
+
+.share:hover > h1 > span:nth-child(6):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 600ms;
+  transform: rotate(0deg);
+}
+
+.share:hover > h1 > span:nth-child(6) {
+  color: #39393B;
+  transition-delay: 660ms;
+}
+
+.share:hover > h1 > span:nth-child(7):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 700ms;
+  transform: rotate(5deg);
+}
+
+.share:hover > h1 > span:nth-child(7) {
+  color: #39393B;
+  transition-delay: 770ms;
+}
+
+.share:hover > h1 > span:nth-child(8):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 800ms;
+  transform: rotate(10deg);
+}
+
+.share:hover > h1 > span:nth-child(8) {
+  color: #39393B;
+  transition-delay: 880ms;
+}
+
+.share:hover > h1 > span:nth-child(9):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 900ms;
+  transform: rotate(15deg);
+}
+
+.share:hover > h1 > span:nth-child(9) {
+  color: #39393B;
+  transition-delay: 990ms;
+}
+
+.share:hover > h1 > span:nth-child(10):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 1000ms;
+  transform: rotate(20deg);
+}
+
+.share:hover > h1 > span:nth-child(10) {
+  color: #39393B;
+  transition-delay: 1100ms;
+}
+
+
+
+#page {
+    background: black; /*rausva spalva*/
+    margin: 0 auto; /* centruoti */
+    padding: auto;
+    width: 90%;
+    height: 100%;
+}
+
+/*...................MENU...........................*/
+
+
+#reklama{
+    height: 620px;
+    border: 2px solid white;
+    background: black;
+    padding: 0 10px;
+    width: 40%;
+}
+
+embed:focus {
+    outline: none;
+}
+/*...................................................*/
+#header {
+    padding: 7%;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+}
+/*.................FC6 oranzine spalva.....................*/
+#header {
+    background: black;
+    border: 2px solid white;
+}
+
+#header h1 {
+    padding: 10px;
+}
+
+#subhead {
+    background: black;
+    border: 2px solid white;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#content {
+    /*    display: flex;
+  flex-wrap: wrap; */
+    background: black; /*balta*/
+    border: 2px solid white;
+  
+    height: 620px;
+    padding: 0 10px;
+    text-align: center;
+    color: white;
+    width: 60%;
+
+  max-height: 100%;
+}
+
+#content h2 {
+   
+}
+
+#content i {
+    padding: 5px;
+}
+
+#content h3 {
+    color: orange;
+}
+
+
+#header {
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+/*Pakopiniais stiliais panaikinkite ženklinimą ir paraštes:*/
+
+/*.................Atsiliepimu Stile.....................*/
+
+#menu {
+    padding: 0;
+}
+
+.footer {
+    border: 2px solid white;
+    padding: 10px 0;
+
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+#reklama a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1100px) {
+    #reklama {
+    width: 100% ;
+   min-height: 100% ;
+    height: 100%; 
+    }
+
+
+hr.new5 {
+ border: 10px solid red;
+}
+
+
+    
+    #reklama a img {
+        display: block;
+        width: 90%;
+
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    #content {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #subhead {
+        min-width: auto;
+        white-space: pre-wrap; /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+
+    
+
+    #reklama:hover img {
+        transform: scale(1.1) !important; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+}
+
+
+@media (max-width: 920px){ 
+      #header {
+        padding-top: 15%;
+    }
+#reklama {
+/*     min-height: 60% !important;
+    height: 60% !important; */
+}
+   #reklama a img {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px){  
+
+hr.new5 {
+ border: 0px;
+}
+
+hr.new7 {
+  border: 10px solid red;
+  border-radius: 5px;
+   position: absolute;
+    bottom: 0;
+    width: 95%;
+}
+
+.main-container {
+    height: 97%;
+}
+.first-container h1, .second-container h1 {
+    letter-spacing: 1px;
+    font-size: 5vw;
+}
+
+#reklama{
+    height:  570px;
+}
+
+}
+
+
+.darkmode--activated label,
+.darkmode--activated .footer a,
+.darkmode--activated .first-container h1, 
+.darkmode--activated .second-container h1
+{
+    color: black;
+}
+
+
+
+.darkmode-background {
+    background: #000 !important;
+  }
+
+.popup {
+     /* width: 80%; */
+    padding: 15px;
+    /* left: 0; */
+    margin-left: 5%;
+    border: 1px solid rgb(1,82,73);
+    border-radius: 10px;
+    color: rgb(1,82,73);
+    background: white;
+    position: absolute;
+    top: 50%;
+    box-shadow: 5px 5px 5px #000;
+    z-index: 10001;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 10000;
+  display :none;
+}
+
+@media (min-width: 300px) {
+  .popup {
+    width: 53%;
+  }
+}
+@media (min-width: 500px) {
+  .popup {
+     width: 33.33333%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .popup {
+    width: 50%;
+    margin-left: 33.33333%;
+  }
+}
+
+.dialog-btn {
+  background-color:#44B78B;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #44B78B;
+  border-radius: 10px;
+    height: 8vh;
+    width: 17vh;
+}
+.dialog-btn:hover {
+  background-color:#015249;
+  cursor: pointer;
+}
+
+
+
+
+
+
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Roboto is Material's default font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+ button{
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #6200ee;
+  margin-bottom: 0.2cm; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+ border-radius: 2.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+ button {
+  margin: 0 auto;
+  width: 50%;
+}

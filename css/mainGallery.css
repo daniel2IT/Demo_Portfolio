@@ -1,0 +1,505 @@
+/*...................................................*/
+
+#subhead {
+    font-family: "Vast Shadow", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 280px;
+    background: black;
+    border: 2px solid white;
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+
+img {
+    display: inline-block; /* panaikinamas papildomas tarpas paveiksliukuose kuris buvo anksciau*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*kad nebutu papildomu nereikalingu tarpu*/
+}
+
+/*...................................................*/
+#page {
+    background: black; /*rausva spalva*/
+    padding: auto;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+
+
+embed:focus {
+    outline: none;
+}
+/*...................................................*/
+#header {
+    padding: 7%;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    flex-wrap: wrap;
+}
+/*.................FC6 oranzine spalva.....................*/
+#header {
+    background: black;
+    border: 2px solid white;
+}
+
+#header h1 {
+    padding: 10px;
+}
+
+.row-gallery {
+    height: 600px;
+}
+
+#content {
+    background: black; /*balta*/
+    border: 2px solid white;
+    height: 600px; /*600px */
+    padding: 0 10px;
+    text-align: center;
+    color: white;
+    width: 60%;
+
+    max-height: 100%;
+}
+
+#header {
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+/*.................Image.....................*/
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+#container-root{
+    width: 100%;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.column img {
+    vertical-align: middle;
+    height: 30.22%;
+}
+
+
+pre {
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+    font-size: 18px;
+}
+
+/*Pakopiniais stiliais panaikinkite ženklinimą ir paraštes:*/
+
+/*.................Atsiliepimu Stile.....................*/
+
+img:hover {
+  transform: scaleX(-1);
+}
+
+
+/*...................MENU...........................*/
+#reklama {
+    height: 600px;
+    border: 2px solid white;
+    background: black;
+    padding: 0 10px;
+    width: 40%;
+}
+
+.my-flex-center-container{
+    height: 100%
+}
+
+.Adisabled{
+    display: grid;
+}
+
+#reklama a { 
+ position: absolute;
+     height: 78%;
+
+     width: 34%;
+  }
+
+#reklama a img {
+    height: 100% ;
+}
+
+#reklama:hover a img {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    filter: contrast(110%);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+  #reklama a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 2.5s;
+    z-index: 20;
+  }
+  #reklama a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #reklama a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+   from { transform: translateY(0%) rotate(100deg); left: 90%; }
+    to   { transform: translateY(0%); left: 55%; }
+  }
+
+
+#menu {
+    padding: 0;
+}
+
+#reklama a img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 992px) {
+
+
+ @keyframes fader {
+   from { transform: translateY(0%) rotate(360deg); left: 90%; }
+    to   { transform: translateY(0%); left: 12%; }
+  }
+
+.my-flex-center-container{
+  margin: auto;
+      width: 75%;
+
+}
+
+#reklama a{
+    width: 65%;
+}
+    #reklama {
+        width: 100% !important;
+    }
+    #reklama a img {
+        display: block;
+           width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    #content {
+        width: 100% !important;
+    }
+
+    #subhead {
+        min-width: auto;
+        white-space: pre-wrap; /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+
+   
+
+    #reklama:hover img {
+        transform: scale(1.1) !important; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+
+      @keyframes fader {
+   from { transform: translateY(0%) rotate(50deg); left: 24%; }
+    to   { transform: translateY(0%); left: 12%; }
+  }
+
+
+     .column:last-child{
+    display: none;
+ }
+
+
+
+       #header {
+        padding-top: 10%;
+    }
+
+    #reklama {
+        min-height: 60%;
+    }
+    #container{
+         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+.column {
+    -ms-flex: 33.33%; /* IE10 */
+    flex:  33.33%;
+    max-width:  33.33%;
+    padding: 14px 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+}
+
+@media (max-width: 700px) {
+
+         @keyframes fader {
+   from { transform: translateY(0%) rotate(550deg); left: 10%; }
+    to   { transform: translateY(0%); left: 13%; }
+  }
+
+
+.column {
+    -ms-flex: 50%; /* IE10 */
+    flex:  50%;
+    max-width:  50%;
+    padding: 0 4px;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+  .column:last-child{
+    display: inline;
+ }
+
+.column img{
+    margin-top: 8px;
+
+}
+
+
+
+
+.row-gallery {
+        height: auto;
+        padding: 0 4px;
+}
+    #content {
+        height: auto;
+    }
+
+
+
+}
+
+@media (max-width: 800px) {
+    #reklama a img {
+        width: 100%;
+    }
+        #header {
+        padding-top: 15%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #reklama a {
+    width: 84%;
+    padding-bottom: 1%;
+    }
+
+    .my-flex-center-container {
+    margin: auto;
+    width: 100%;
+    }
+
+ 
+
+
+
+    #content {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 350px) {
+    #header {
+        padding-top: 30%;
+        min-width: auto;
+        white-space: pre-wrap; /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+    }
+}
+
+
+.darkmode--activated label,
+.darkmode--activated .footer a,
+.darkmode--activated .first-container h1, 
+.darkmode--activated .second-container h1
+{
+    color: black;
+}
+
+
+#subhead button {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.darkmode-background {
+    background: #000 !important;
+  }
+
+.popup {
+     /* width: 80%; */
+    padding: 15px;
+    /* left: 0; */
+    margin-left: 5%;
+    border: 1px solid rgb(1,82,73);
+    border-radius: 10px;
+    color: rgb(1,82,73);
+    background: white;
+    position: absolute;
+    top: 50%;
+    box-shadow: 5px 5px 5px #000;
+    z-index: 10001;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 10000;
+  display :none;
+}
+
+@media (min-width: 300px) {
+  .popup {
+    width: 53%;
+  }
+}
+@media (min-width: 500px) {
+  .popup {
+     width: 33.33333%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .popup {
+    width: 50%;
+    margin-left: 33.33333%;
+  }
+}
+
+.dialog-btn {
+  background-color:#44B78B;
+  color: white;
+  font-weight: 700;
+  border: 1px solid #44B78B;
+  border-radius: 10px;
+    height: 8vh;
+    width: 17vh;
+}
+.dialog-btn:hover {
+  background-color:#015249;
+  cursor: pointer;
+}
+
+
+
+
+/* Roboto is Material's default font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ button{
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #6200ee;
+  margin-bottom: 0.2cm; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+ border-radius: 2.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+ button {
+  margin: 0 auto;
+  width: 50%;
+}

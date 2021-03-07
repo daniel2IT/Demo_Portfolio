@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feedback</title>
+
+        <meta http-aquiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Normalaizeris turi visada buti pajungtas pries kitus stilius ...
+  
+  Standartizacija, bei normalizacija stiliu, tai reikalinga kad kiekvienas brauzeris atvaizduotu musu produkta(stilius) taip kaip reikiant
+  -->
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+
+
+        <!-- CSS Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
+        <!-- Stiliu prijungimas -->
+        <link rel="stylesheet" href="../css/menu.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/mainFedback.css" />
+        <!-- Fono keitimas per https://fonts.google.com/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheetva" />
+        <!-- paprasta piktograma prie musu tinklapio -->
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+
+        <style>
+            /*.................Background paveikliuko nustatymai.....................*/
+            body {
+                justify-content: center;
+                background-image: url("../img/bg/bg-header.jpg"); /*back*/
+                background-repeat: no-repeat;
+                backgroundattachment: fixed;
+                background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+            }
+        </style>
+    </head>
+    <body>
+
+               <div class="overlay" id="dialog-container">
+                                <div class="popup">
+                                  <p>This will be saved. Continue ?</p>
+                                  <div class="text-center">
+                                    <button onclick="red()" class="dialog-btn btn-cancel">Red</button>
+                                    <button onclick="green()" class="dialog-btn btn-cancel">Green</button>
+                                    <button onclick="orange()" class="dialog-btn btn-cancel">Orange</button>
+                                    <button onclick="standart()" class="dialog-btn btn-cancel">Default</button>
+                                  </div>
+                                </div>
+                              </div>
+
+        <!--
+                    Fullscreen Overlay Navigation Menu Bar
+-->
+<div class="d-flex flex-row">
+
+        <div id="menu">
+        <header>
+            <img src="../img/logo/logo baseinas.png" class="logo" />
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav >
+                <ul class="d-flex" class="dropdown-menu">
+                    <li class="p-2 flex-fill"><a href="../index.html">Home</a></li>
+                    <li class="p-2 flex-fill"><a href="aboutme.html">About</a></li>
+                    <li class="p-2 flex-fill"><a href="feedback.html">Feedback</a></li>
+                    <li class="p-2 flex-fill"><a href="gallery.html">Gallery</a></li>
+                    <li class="p-2 flex-fill"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown keep-open" id="myDropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Settings
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"><button id="increase">&uarr;A</button>
+                        <button id="decrease">A&darr;</button>
+                        </a>
+                         <a id="btn-show-dialog" class="dropdown-item" href="#">Header Color</a>
+                        <a onclick="myFunctionDarkWhiteMode()" class="dropdown-item" href="#">Night/Dark mode</a>
+                      </div>
+                    </li>
+       <li class="p-2 flex-fill"><a href="game.html">Game</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        </div>
+
+        <div id="page">
+            <div id="header">
+                <h1>Feedback</h1>
+                <div id="subhead">
+                    Do you have any feedback for me?<br />
+                    What can I do better the next time?
+                </div>
+            </div>
+
+               <div id="container-root" class="d-flex second-container-data flex-row flex-wrap">
+
+                <div id="content" class="d-flex flex-column flex-wrap">
+                    <h2 id="h2o">I'd appreciate any feedback</h2>
+                    <div class="d-flex flex-column flex-wrap container-feedback">
+              <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label id="demoFirstName" for="validationCustom01">First name</label>
+      <input  type="text" class="form-control" id="validationDefault1" placeholder="First name" required> 
+
+          <div id="First-Name-Text"></div>
+         <div class="invalid-feedback">
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label id="demoLastName" for="validationCustom02">Last name</label>
+      <input  type="text" class="form-control" id="validationDefault2" placeholder="Last name" required>
+       <div id="Last-Name-Text"></div>
+        <div class="invalid-feedback">
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom03">Username</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="validationDefault3" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+      </div>
+          <div id="UserName-Text"></div>
+        <div class="invalid-feedback">
+        </div>
+    </div>
+        <div class="col-md-6 mb-3">
+      <label for="validationCustom04">Phone</label>
+      <input type="text" class="form-control" id="validationDefault4"placeholder="Phone" required>
+         <div id="Phone-Text"></div>
+        <div class="invalid-feedback">
+        </div>
+    </div>
+  </div>
+
+
+
+ 
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+      </div>
+    </div>
+  </div>
+            <!-- type='button' -->
+  <button onclick="myFunction()" type='submit' >Submit form</button>
+</form>
+                    </div>
+                    <!--<p>Daug teksto</p>-->
+                </div>
+            
+
+            <div id="reklama" class="d-flex justify-content-center">
+                <img src="../gif/Webp.net-gifmaker.gif" alt="this slowpoke moves" width="100%" />
+            </div>
+
+            </div>
+
+            <!--
+                    FOOTER
+-->
+            <!-- cia bus foninis paveiksliukas -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="footer__name">Daniel</p>
+                            <p>HTML layout and website development</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer__social">My social media:</p>
+                            <p class="footer__social__icons">
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <!--   <a href="#" targer="_blank">
+            <i class="fab fa-instagram"></i>
+           </a>
+           
+           <a href="#" targer="_blank">
+            <i class="fab fa-youtube"></i>
+           </a> -->
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div><a href="#" class="button" target="_blank">Contact me</a></div>
+                            <p>
+                                Want more information?<br />
+                                Write me
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div> <!--<div class="d-flex flex-row"> -->
+
+          <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+          </script>
+          
+         <script src="../js/Feedback.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+
+        <meta http-aquiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Normalaizeris turi visada buti pajungtas pries kitus stilius ...
+  
+  Standartizacija, bei normalizacija stiliu, tai reikalinga kad kiekvienas brauzeris atvaizduotu musu produkta(stilius) taip kaip reikiant
+  -->
+
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+     
+ 
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+             <!-- Stiliu prijungimas -->
+        <link rel="stylesheet" href="../css/menu.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/mainGallery.css" />
+
+
+        <!-- Fono keitimas per https://fonts.google.com/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheetva" />
+        <!-- paprasta piktograma prie musu tinklapio -->
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+
+        <style>
+            /*.................Background paveikliuko nustatymai.....................*/
+            body {
+                justify-content: center;
+                background-image: url("../img/bg/bg-header.jpg"); /*back*/
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%; /*kad vaizdas butu neistemptas*/
+            }
+        </style>
+    </head>
+
+    <body>
+
+                      <div class="overlay" id="dialog-container">
+                                <div class="popup">
+                                  <p>This will be saved. Continue ?</p>
+                                  <div class="text-center">
+                                    <button onclick="red()" class="dialog-btn btn-cancel">Red</button>
+                                    <button onclick="green()" class="dialog-btn btn-cancel">Green</button>
+                                    <button onclick="orange()" class="dialog-btn btn-cancel">Orange</button>
+                                    <button onclick="standart()" class="dialog-btn btn-cancel">Default</button>
+                                  </div>
+                                </div>
+                              </div>
+
+        <!--
+                    Fullscreen Overlay Navigation Menu Bar
+-->
+<div class="d-flex flex-row">
+             <div id="menu">
+        <header>
+            <img src="../img/logo/logo baseinas.png" class="logo" />
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav >
+                <ul class="d-flex" class="dropdown-menu">
+                    <li class="p-2 flex-fill"><a href="../index.html">Home</a></li>
+                    <li class="p-2 flex-fill"><a href="aboutme.html">About</a></li>
+                    <li class="p-2 flex-fill"><a href="feedback.html">Feedback</a></li>
+                    <li class="p-2 flex-fill"><a href="gallery.html">Gallery</a></li>
+                    <li class="p-2 flex-fill"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown keep-open" id="myDropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Settings
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#"><button id="increase">&uarr;A</button>
+                        <button id="decrease">A&darr;</button>
+                        </a>
+                         <a id="btn-show-dialog" class="dropdown-item" href="#">Header Color</a>
+                        <a onclick="myFunctionDarkWhiteMode()" class="dropdown-item" href="#">Night/Dark mode</a>
+                      </div>
+                    </li>
+       <li class="p-2 flex-fill"><a href="game.html">Game</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        </div>
+
+        <div id="page" class="d-flex flex-column">
+            <div id="header">
+                <h1>Gallery</h1>
+                <div id="subhead">View part of my works</div>
+            </div>
+
+            <div id="container-root" class="d-flex flex-lg-row flex-md-column flex-column flex-mg">
+                <div id="content" class="d-flex flex-column flex-wrap">
+                    <!-- Photo Grid -->
+                    <div class="d-flex flex-wrap row-gallery">
+                        <div  class="column">
+                            <img src="../img/gallery/photo1.jpg" style="width: 100%;" class="img-rounded" />
+                            <img src="../img/gallery/photo3.jpg" style="width: 100%;" class="img-circle"/>
+                            <img src="../img/gallery/photo6.jpg" style="width: 100%;" class="img-thumbnail"/>
+                        </div>
+                        <div class="column">
+                            <img src="../img/gallery/photo4.jpg" style="width: 100%;" class="img-responsive"/>
+                            <img src="../img/gallery/photo2.jpg" style="width: 100%;"  class="img-rounded" />
+                            <img src="../img/gallery/photo1.jpg" style="width: 100%;" class="img-thumbnail" />
+                        </div>
+                        <div class="column">
+                            <img src="../img/gallery/photo1.jpg" style="width: 100%;" class="img-thumbnail" />
+                            <img src="../img/gallery/photo3.jpg" style="width: 100%;"  class="img-circle" />
+                            <img src="../img/gallery/photo6.jpg" style="width: 100%;" class="img-rounded" />
+                        </div>
+                        <div class="column">
+                            <img src="../img/gallery/photo4.jpg" style="width: 100%;" class="img-rounded" />
+                            <img src="../img/gallery/photo2.jpg" style="width: 100%;" class="img-thumbnail" />
+                            <img src="../img/gallery/photo1.jpg" style="width: 100%;"  class="img-circle" />
+                        </div>
+                    </div>
+                </div>
+
+   <div id="reklama" >
+      <div class="d-flex flex-column flex-wrap my-flex-center-container">
+<a href="../img/gallery/photo1.jpg"><img src="../img/gallery/photo1.jpg"></a>
+<a href="../img/gallery/photo1.jpg"><img src="../img/gallery/photo3.jpg"></a>
+<a href="../img/gallery/photo1.jpg"><img src="../img/gallery/photo4.jpg"></a>
+<a href="../img/gallery/photo1.jpg"><img src="../img/gallery/photo5.jpg"></a>
+<a href="../img/gallery/photo1.jpg"><img src="../img/gallery/photo6.jpg"></a>
+      </div>
+   </div>
+</div>
+
+            <!--
+                    FOOTER
+-->
+            <!-- cia bus foninis paveiksliukas -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="footer__name">Daniel</p>
+                            <p>HTML layout and website development</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer__social">My social media:</p>
+                            <p class="footer__social__icons">
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                                <a href="#" targer="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <!--   <a href="#" targer="_blank">
+            <i class="fab fa-instagram"></i>
+           </a>
+           
+           <a href="#" targer="_blank">
+            <i class="fab fa-youtube"></i>
+           </a> -->
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <div><a href="#" class="button" target="_blank">Contact me</a></div>
+
+                            <p>
+                                Want more information?<br />
+                                Write me
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</div><!-- <div class="d-flex flex-row"> -->
+
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+          </script>
+          
+        <script src="../js/GalleryScript.js"></script>
+    </body>
+</html>
