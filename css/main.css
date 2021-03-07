@@ -1,24 +1,29 @@
 /* test*/
+
+
 /* Simple Border Button neon */
+
 #border-neon {
-    background-color: transparent;
-    border: 2px solid pink;
-    color: pink;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
- 
-#border-neon:hover, #border-neon:focus {
-    -webkit-box-shadow: inset 0px 0px 8px 3px #0EF1D9;
-    box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
-    border-color: #0EF1D9;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8, 0 0 50px #ff94b8, 0 0 60px #ff94b8, 0 0 70px #ff94b8
+	background-color: transparent;
+	border: 2px solid pink;
+	color: rgba(255, 6, 48, 0.774);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
+#border-neon:hover,
+#border-neon:focus {
+	-webkit-box-shadow: inset 0px 0px 8px 3px #0ef1daa6;
+	box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
+	border-color: #0ef1da81;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8, 0 0 50px #ff94b8, 0 0 60px #ff94b8a9, 0 0 70px #ff94b8
+}
 
 .col-4-item b {
-color:  black !important;
+	color: black !important;
 }
+
+
 /* 
 //////////////////////////////////////////////
 /////////////Header Fono nustatymai////////////
@@ -26,81 +31,91 @@ color:  black !important;
 */
 
 .header {
-    background: #343c4e; /*juodas fonas*/
-    height: 100vh; /* padidinam dydi, vh - yra lygi vienetui brauzerio lango..*/
-    min-height: 400px;
-
-    background-repeat: no-repeat; /*kad fonas nesikartotu(nesidubliuoti), jeigu ekranas yra padidintas.*/
-    background-position: center; /*centruojam*/
-    background-size: cover; /*kad atgaivintu savo vaizda, taip kaip jis turi buti(proporcingai pasiguls)*/
-
-    color: #fff; /*teksto*/
-    text-align: center;
-
-    /*konteineriui- divui header priskiriam flexus*/
-    display: flex; /*Lyginam vertikaliskai nepalaiko senus browserius*/
-    flex-direction: column; /*kad parametrai butu sulygioti stulpeliu*/
-    align-items: center; /* horizontaliskai lyginam */
-    justify-content: center; /* centralizuojam */
-
-    position: relative; /*del viso pikto priskiriam tevo laipsni Headeriui*/
+	background: #343c4e;
+	/*juodas fonas*/
+	height: 100vh;
+	/* padidinam dydi, vh - yra lygi vienetui brauzerio lango..*/
+	min-height: 400px;
+	background-repeat: no-repeat;
+	/*kad fonas nesikartotu(nesidubliuoti), jeigu ekranas yra padidintas.*/
+	background-position: center;
+	/*centruojam*/
+	background-size: cover;
+	/*kad atgaivintu savo vaizda, taip kaip jis turi buti(proporcingai pasiguls)*/
+	color: #fff;
+	/*teksto*/
+	text-align: center;
+	/*konteineriui- divui header priskiriam flexus*/
+	display: flex;
+	/*Lyginam vertikaliskai nepalaiko senus browserius*/
+	flex-direction: column;
+	/*kad parametrai butu sulygioti stulpeliu*/
+	align-items: center;
+	/* horizontaliskai lyginam */
+	justify-content: center;
+	/* centralizuojam */
+	position: relative;
+	/*del viso pikto priskiriam tevo laipsni Headeriui*/
 }
-
 
 .carousel-caption {
-   visibility: visible !important;
+	visibility: visible !important;
 }
 
-.d-none { 
-visibility: visible !important;
-display: inline !important;
- }
-.carousel-item{ 
-     /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- }
-
-
-
-#carouselExampleIndicators, .carousel-inner, 
-.carousel-item , img{
-    height: 100%;
-
+.d-none {
+	visibility: visible !important;
+	display: inline !important;
 }
-#carouselExampleIndicators, .carousel-inner, 
+
 .carousel-item {
-    width: 100%;
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#carouselExampleIndicators,
+.carousel-inner,
+.carousel-item,
+img {
+	height: 100%;
+}
+
+#carouselExampleIndicators,
+.carousel-inner,
+.carousel-item {
+	width: 100%;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("../img/svg/back-arrow.svg");
+	background-image: url("../img/svg/back-arrow.svg");
 }
 
 .carousel-control-next-icon {
-    background-image: url("../img/svg/share.svg");
+	background-image: url("../img/svg/share.svg");
 }
 
 [role=button] {
-    cursor: url("../img/svg/click.png"), auto !important;
-    background-color: rgba(0, 214, 170, 0.85);
-    
+	cursor: url("../img/svg/click.png"), auto !important;
+	background-color: rgba(255, 255, 255, 0.507);
 }
 
-.carousel-control-next, .carousel-control-prev {
-    opacity: .7;
-    width: 10%;
-    transition: opacity .12s cubic-bezier(0.32, 1.21, 0.68, 0.04);
+.carousel-control-next,
+.carousel-control-prev {
+	opacity: .7;
+	width: 10%;
+	transition: opacity .12s cubic-bezier(0.32, 1.21, 0.68, 0.04);
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 58px;
-    height: 41px;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 58px;
+	height: 41px;
 }
+
+
 /* 
 //////////////////////////////////////////////
 /////////////Teksto Stilizavimas///////////////
@@ -108,360 +123,277 @@ display: inline !important;
 */
 
 .header__title {
-    font-size: 56px;
-    margin-bottom: 30px;
-    margin-top: -50px; /* biski pastumiau i virsu, nes ant dideliu ekranu, po posukimo i apacia labai daug veitos lieka virsutinioj dali(dizaino reikaliukai)*/
+	font-size: 56px;
+	margin-bottom: 30px;
+	margin-top: -50px;
+	/* biski pastumiau i virsu, nes ant dideliu ekranu, po posukimo i apacia labai daug veitos lieka virsutinioj dali(dizaino reikaliukai)*/
+	background: rgba(34, 0, 51/ 50%);
 
-      background: rgba(34,0,51/ 50%) ;
+	text-shadow: 0 0 .1em, 0 0 .3em;
+	margin: 30px auto;
+	width: 50%;
+	color: rgb(0, 0, 0);
+	word-wrap: break-word;
 
-        color: #ffc;
-        text-shadow: 0 0 .1em, 0 0 .3em;
-
-  margin: 30px auto;
-    width: 50%;
-    color: white;
-
-           word-wrap: break-word; /* Internet Explorer 5.5+ */
-/*
-top padding is 25px
-right padding is 50px
-bottom padding is 75px
-left padding is 100px
-padding: 25px 50px 75px 100px;
-*/
-padding: 2px 7px 2px 7px;
-          
-
-        background:
- radial-gradient(circle at top left,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) top left,
- radial-gradient(circle at top right,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) top right,
- radial-gradient(circle at bottom right,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) bottom right,
- radial-gradient(circle at bottom left,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) bottom left;
-background-size: 50% 50%;
-background-repeat: no-repeat;
-
+	padding: 2px 7px 2px 7px;
+    background: radial-gradient(
+        circle at top left, transparent 15px,
+         rgba(2, 252, 252, 0.801) 0) top left,
+          radial-gradient(circle at top right, 
+          transparent 15px,
+          rgb(2, 252, 252, 0.801) 0) top right,
+           radial-gradient(circle at bottom right, transparent 15px,
+           rgb(2, 252, 252, 0.801) 0) bottom right,
+             radial-gradient(circle at bottom left, transparent 15px,
+             rgb(2, 252, 252, 0.801) 0) bottom left;
+   background-size: 50% 50%;
+	background-repeat: no-repeat;
 }
 
-.header__citata{
-    font-size: 28px;
-    margin-bottom: 42px;
+.header__citata {
+	font-size: 28px;
+	margin-bottom: 42px;
+	text-shadow: 0 0 .1em, 0 0 .3em;
+	margin-bottom: 40vh !important;
+	margin: 30px auto;
+	width: 50%;
+	color: rgb(0, 0, 0);
 
-      
-        text-shadow: 0 0 .1em, 0 0 .3em;
-        margin-bottom: 40vh !important;
-
-          margin: 30px auto;
-    width: 50%;
-    color: white;
-
-/*
-top padding is 25px
-right padding is 50px
-bottom padding is 75px
-left padding is 100px
-padding: 25px 50px 75px 100px;
-*/
-padding: 2px 7px 2px 7px;
-          
-
-        background:
- radial-gradient(circle at top left,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) top left,
- radial-gradient(circle at top right,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) top right,
- radial-gradient(circle at bottom right,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) bottom right,
- radial-gradient(circle at bottom left,
- transparent 15px, hsl(180, 29%, 42%, 0.9) 0) bottom left;
-background-size: 50% 50%;
-background-repeat: no-repeat;
-
+	padding: 2px 7px 2px 7px;
+    background: radial-gradient(
+        circle at top left, transparent 15px,
+         rgba(2, 252, 252, 0.801) 0) top left,
+          radial-gradient(circle at top right, 
+          transparent 15px,
+          rgb(2, 252, 252, 0.801) 0) top right,
+           radial-gradient(circle at bottom right, transparent 15px,
+           rgb(2, 252, 252, 0.801) 0) bottom right,
+             radial-gradient(circle at bottom left, transparent 15px,
+             rgb(2, 252, 252, 0.801) 0) bottom left;
+   background-size: 50% 50%;
+	background-repeat: no-repeat;
 }
 
 .carousel-indicators {
-    margin-left: 15%;
+	margin-left: 15%;
 }
 
-
 .header__title1 {
-    font-size: 56px;
-   font-size: 56px;
-
-/* added new */
-    margin: 30px auto;
-    width: 50%;
-    color: white;
-
-           word-wrap: break-word; /* Internet Explorer 5.5+ */
-/*
-top padding is 25px
-right padding is 50px
-bottom padding is 75px
-left padding is 100px
-padding: 25px 50px 75px 100px;
-*/
-padding: 2px 7px 2px 7px;
-          
-
-text-shadow: 1px 1px black, 2px 2px black,
- 3px 3px black, 4px 4px black,
- 5px 5px black, 6px 6px black,
- 7px 7px black, 8px 8px black;
-
-background:
- linear-gradient(135deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- top left,
- linear-gradient(-135deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- top right,
- linear-gradient(-45deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- bottom right,
- linear-gradient(45deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- bottom left;
-background-size: 50% 50%;
-background-repeat: no-repeat;
-
-
+	font-size: 56px;
+	font-size: 56px;
+	/* added new */
+	margin: 30px auto;
+	width: 50%;
+	color: white;
+	word-wrap: break-word;
+	/* Internet Explorer 5.5+ */
+	padding: 2px 7px 2px 7px;
+	text-shadow: 1px 1px rgb(255, 255, 255), 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black;
+    
+    background: linear-gradient(
+        135deg, transparent 15px,
+         rgba(0, 0, 0, 0.8) 0)
+          top left, linear-gradient(-135deg,
+           transparent 15px, rgba(2, 0, 0, 0.8) 0) top right, 
+           linear-gradient(-45deg, transparent 15px,
+            rgba(2, 0, 0, 0.8) 0) bottom right, linear-gradient(45deg, transparent 15px,
+             rgba(2, 0, 0, 0.8) 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
 }
 
 .header__citata1 {
-    
-        margin: 42px auto;
-    width: 50%;
-    color: white;
-
-        
-
-
-background: hsl(0,50%,45%);
-text-shadow: 1px 1px black, 2px 2px black,
- 3px 3px black, 4px 4px black,
- 5px 5px black, 6px 6px black,
- 7px 7px black, 8px 8px black;
-
-
-background:
- linear-gradient(135deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- top left,
- linear-gradient(-135deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- top right,
- linear-gradient(-45deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- bottom right,
- linear-gradient(45deg, transparent 15px, hsl(0,50%,45%, 0.8) 0)
- bottom left;
-background-size: 50% 50%;
-background-repeat: no-repeat;
-        
-
-       
-        margin-bottom: 40vh !important;
+	margin: 42px auto;
+	width: 50%;
+	color: white;
+	background: hsl(0, 0%, 100%);
+	text-shadow: 1px 1px rgb(255, 255, 255), 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black;
+    background: linear-gradient(
+        135deg, transparent 15px,
+         rgba(0, 0, 0, 0.8) 0)
+          top left, linear-gradient(-135deg,
+           transparent 15px, rgba(2, 0, 0, 0.8) 0) top right, 
+           linear-gradient(-45deg, transparent 15px,
+            rgba(2, 0, 0, 0.8) 0) bottom right, linear-gradient(45deg, transparent 15px,
+             rgba(2, 0, 0, 0.8) 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	margin-bottom: 40vh !important;
 }
 
+.header__title2 {
+	font-size: 56px;
+	margin-top: -50px;
+	/* biski pastumiau i virsu, nes ant dideliu ekranu, po posukimo i apacia labai daug veitos lieka virsutinioj dali(dizaino reikaliukai)*/
+	/* added new */
+	margin: 0 auto;
+	width: 50%;
 
+	padding: 2px 7px 0px 7px;
+    background: repeating-linear-gradient(190deg, 
+    rgb(255, 251, 0) 40px,
+     rgb(217, 255, 0) 80px,
+     rgb(255, 251, 0) 120px,
+     rgb(255, 251, 0) 160px,
+        rgba(255, 255, 0, 0.295) 200px,
+         rgb(0, 0, 0) 240px,
+         rgb(255, 251, 0) 280px,
+         rgb(255, 251, 0) 300px),
+           repeating-linear-gradient(-190deg,
+           rgb(0, 0, 0) 30px, 
+           rgba(230, 255, 4, 0.123) 60px, 
+           rgb(0, 0, 0) 90px,
+            rgba(218, 215, 11, 0.384) 120px, 
+            rgb(8, 8, 7) 150px, 
+            rgb(0, 0, 0) 180px, 
+            rgb(8, 8, 0) 210px, 
+            rgba(217, 255, 4, 0.438) 230px), 
+            repeating-linear-gradient(37deg,
+             rgb(0, 0, 0) 370px, 
+             rgba(0, 0, 0, 0.986) 150px, 
+             rgb(0, 0, 0) 150px);
 
-
-.header__title2{
-    font-size: 56px;
-   
-    margin-top: -50px; /* biski pastumiau i virsu, nes ant dideliu ekranu, po posukimo i apacia labai daug veitos lieka virsutinioj dali(dizaino reikaliukai)*/
-
-    /* added new */
-    margin: 0 auto;
-    width: 50%;
-    color: white;
-
-/*
-top padding is 25px
-right padding is 50px
-bottom padding is 75px
-left padding is 100px
-padding: 25px 50px 75px 100px;
-*/
-padding: 2px 7px 0px 7px;
-
-
-  background:
-      repeating-linear-gradient(190deg, rgba(255, 255, 0, 0.7) 40px,
-        rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.8) 120px,
-        rgba(0, 255, 0, 0.5) 160px, rgba(255, 255, 0, 0.7) 200px,
-        rgba(75, 0, 130, 0.5) 240px, rgba(255, 255, 0, 0.7) 280px,
-        rgba(255, 0, 0, 0.5) 300px),
-      repeating-linear-gradient(-190deg, rgba(255, 255, 0, 0.7) 30px,
-        rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.8) 90px,
-        rgba(0, 255, 0, 0.5) 120px, rgba(255, 255, 0, 0.7) 150px,
-        rgba(75, 0, 130, 0.5) 180px, rgba(255, 255, 0, 0.7) 210px,
-        rgba(255, 0, 0, 0.5) 230px),
-      repeating-linear-gradient(37deg, yellow 370px, green 150px, red 150px);
-
-
-        color: #ffc;
-        text-shadow: 10px 10px 20px red, 6em 4em 1em black,  0 0.1em blue !important;
-   
-
+             font-size: 38px;
+             line-height: 48px;
+    color: rgb(0, 0, 0);
+	text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.13), 6em 4em 1em black, 0 0.1em rgba(29, 29, 68, 0.295) !important;
 }
 
 .header__citata2 {
-    font-size: 28px;
-    margin-bottom: 42px;
+	font-size: 28px;
+	margin-bottom: 4header__citata22px;
+	margin: 0 auto;
+	width: 50%;
+	color: rgb(0, 0, 0) !important;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.13), 6em 4em 1em black, 0 0.1em rgba(29, 29, 68, 0.295) !important;
 
-    /* added new */
-    margin: 0 auto;
-    width: 50%;
-    color: white;
-
-/*
-top padding is 25px
-right padding is 50px
-bottom padding is 75px
-left padding is 100px
-padding: 25px 50px 75px 100px;
-*/
-padding: 0px 7px 2px 7px;
-
-background:
- linear-gradient(30deg, transparent 15px, rgba(-4, 242, 0, 0.5) 0)
- top left,
- linear-gradient(-30deg, transparent 15px, rgba(-4, 242, 0, 0.5) 0)
- top right,
- linear-gradient(-510deg, transparent 15px, rgba(255,0, 0, 0.7) 0)
- bottom right,
- linear-gradient(151deg, transparent 15px, rgba(255, 0, 0, 0.7) 0)
- bottom left;
-background-size: 50% 50%;
-background-repeat: no-repeat;
-
-        color: #fff;
-     text-shadow: 10px 10px 20px red, 6em 4em 1em black,  0 0.1em blue !important;
-         margin-bottom: 40vh !important;
-
-
+    padding: 0px 7px 2px 7px;
+    background: linear-gradient(30deg,
+     transparent 15px, 
+    rgb(123, 255, 46) 0) top left,
+     linear-gradient(-30deg, transparent 15px,
+     rgba(123, 255, 46) 0) top right,
+      linear-gradient(-510deg, transparent 15px,
+       rgb(255, 0, 0) 0) bottom right, 
+       linear-gradient(151deg, transparent 15px,
+        rgba(255, 0, 0, 0.993) 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+  
+	margin-bottom: 40vh !important;
 }
 
-
-.header__arrow{
-    font-size: 48px;
-    color: black;
-
-    width: 60px;
-     height: auto;
-    margin-left: -30px; /*60-30*/
-
-    position: absolute;
-    bottom: 4vh;
-    left: 50%;
-
-    position: absolute;
-    z-index: 1;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: blue;
-    text-align: center;
-    transition: opacity .15s ease;
-
-
+.header__arrow {
+	font-size: 48px;
+	color: black;
+	width: 60px;
+	height: auto;
+	margin-left: -30px;
+	position: absolute;
+	bottom: 4vh;
+	left: 50%;
+	position: absolute;
+	z-index: 1;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: blue;
+	text-align: center;
+	transition: opacity .15s ease;
 }
 
-.header__title, .header__title1, .header__title2 { 
- font-size: 46px;
- }
-.header__citata, .header__citata1, .header__citata2{
-font-size: 46px;
+.header__title,
+.header__title1,
+.header__title2 {
+	font-size: 46px;
 }
 
+.header__citata,
+.header__citata1,
+.header__citata2 {
+	font-size: 46px;
+}
 
 .header__arrow:hover {
-  opacity: .7;
-  color:  #0EF1D9 !important;
-  transition: opacity .88s cubic-bezier(0.52, .24, 0.88, 0.34);
-    left: 19% !important;
-    width: 61% !important;
-  margin-left: 0 !important;
+	opacity: .7;
+	color: #0EF1D9 !important;
+	transition: opacity .88s cubic-bezier(0.52, .24, 0.88, 0.34);
+	left: 19% !important;
+	width: 61% !important;
+	margin-left: 0 !important;
 }
 
-
-.header__arrow__line{
-    width: 100%;
+.header__arrow__line {
+	width: 100%;
 }
-
 
 .overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: 2s cubic-bezier(0, 0.38, 0.51, -0.31) ;
-
-  background: rgba(32, 10, 70, 0.1);
-background-image:
- linear-gradient(45deg,
- rgba(0,0,0,.25) 25%, transparent 0,
- transparent 20%, rgba(154 110 110 / 69%) 0),
- linear-gradient(90deg,
- rgba(0,0,0,.25) 25%, transparent 0,
- transparent 20%, rgba(0, 214, 170, 0.85) 0);
-background-position: 0 0, 15px 15px;
-background-size: 30px 30px;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 2s cubic-bezier(0, 0.38, 0.51, -0.31);
+	background: rgba(32, 10, 70, 0.1);
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, .25) 25%, transparent 0, transparent 20%, rgba(154 110 110 / 69%) 0), linear-gradient(90deg, rgba(0, 0, 0, .25) 25%, transparent 0, transparent 20%, rgba(0, 214, 170, 0.85) 0);
+	background-position: 0 0, 15px 15px;
+	background-size: 30px 30px;
 }
 
 body {
-  
-    color: #fff;
-  }
+	color: #fff;
+}
+
 .portfolio {
-  position: relative;
-    height: 100%;
-       bottom: 0;
+	position: relative;
+	height: 100%;
+	bottom: 0;
 }
+
 .row-portfolio {
-  position: relative;
-    height: 100%;
-     bottom: 0;
+	position: relative;
+	height: 100%;
+	bottom: 0;
 }
+
 .container {
-  position: relative;
-    height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .portfolio:hover .overlay {
-   bottom: 0;
-  height: 100%;
+	bottom: 0;
+	height: 100%;
 }
-
 
 .portfolio-item__img img {
-clip-path: polygon(50% 0, 100% 50%,
- 50% 100%, 0 50%);
-transition: 1s clip-path;
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition: 1s clip-path;
 }
+
 .portfolio-item__img img:hover {
-clip-path: polygon(0 0, 100% 0,
- 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 
 /* Note - langui kuris atsirado .. */
-#note{  
-color:#FFF;  
-background-color:#000;  
-opacity:0.9;  
-box-shadow: -3 3px 6px #000;
-position:absolute;  
-padding:1em 1em 2em 1em;  
 
-height:95%;  
-width:95%;
-
-position: absolute;
-top: 1em;
-left: 0;  
-}  
+#note {
+	color: #FFF;
+	background-color: #000;
+	opacity: 0.9;
+	box-shadow: -3 3px 6px #000;
+	position: absolute;
+	padding: 1em 1em 2em 1em;
+	height: 95%;
+	width: 95%;
+	position: absolute;
+	top: 1em;
+	left: 0;
+}
 
 
 /* 
@@ -471,71 +403,70 @@ left: 0;
 */
 
 .col-4-item {
-    width: 400px;
-    margin-right: 30px;
-    float: left;
+	width: 400px;
+	margin-right: 30px;
+	float: left;
 }
 
 .col-4-item:last-child {
-    margin-right: 0px;
+	margin-right: 0px;
 }
 
 .col-4-item {
-    box-sizing: content-box;
-
-    box-sizing: border-box;
-
-    width: 33%;
-    margin: 0;
-    margin-bottom: 1%;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
+	box-sizing: content-box;
+	box-sizing: border-box;
+	width: 33%;
+	margin: 0;
+	margin-bottom: 1%;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
 }
 
 .portfolio {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    background: inherit;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background: inherit;
 }
 
 .title {
-    font-size: 46px;
-    margin-bottom: 60px;
-    font-family: "Vast Shadow", cursive;
-    text-align: center;
+	font-size: 46px;
+	margin-bottom: 60px;
+	font-family: "Vast Shadow", cursive;
+	text-align: center;
 }
 
 .portfolio-item {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .portfolio-item__img {
-    margin-bottom: 17px;
+	margin-bottom: 17px;
 }
 
 .portfolio-item__img img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .portfolio-item__title {
-    font-size: 24px;
-    line-height: normal;
-    margin-bottom: 5px;
+	font-size: 24px;
+	line-height: normal;
+	margin-bottom: 5px;
 }
 
 .portfolio-item__title a {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #fff;
-    transition: 0.3s ease-out;
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #fff;
+	transition: 0.3s ease-out;
 }
 
 .portfolio-item__title a:hover {
-    color: Red;
-    border-color: rgba(0, 74, 194, 0.3);
+	color: rgb(0, 255, 21) !important;
+	border-color: rgba(0, 74, 194, 0.3);
 }
+
 
 /* 
 //////////////////////////////////////////////
@@ -543,106 +474,74 @@ left: 0;
 ////////////////////////////////////////////////
 */
 
-
 @media (max-width: 1200px) {
+	.row-portfolio {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: stretch;
+		align-content: center;
+		justify-content: stretch;
+	}
+	.col-4-item {
+		width: 100%;
+	}
+	.portfolio-item__img img {
+		width: 75%;
+		height: auto;
+	}
+	.header__title {
+		font-size: 38px;
+		line-height: 48px;
+		margin-bottom: 15px;
+		text-shadow: 0 0 .1em, 0 0 .3em;
+	}
+	.header__citata {
+		font-size: 22px;
+		line-height: 38px;
+		text-shadow: 0 0 .1em, 0 0 .3em;
+	}
+	.header__title1 {
+		line-height: 48px;
+		margin-bottom: 15px;
+	}
+	.header__citata1 {
+		font-size: 22px;
+		line-height: 38px;
+	}
 
- .row-portfolio{
-      display: flex;
-      flex-direction: column ;
-       flex-wrap: wrap  ;
-
-
-      justify-content: stretch  ;
-     
-      align-content: center  ;
-      justify-content: stretch ;
-    }
-
-    .col-4-item{
-        width: 100%;
-    }
-
-
-    .portfolio-item__img img {
-        width: 75%;
-        height: auto;
-    }
-
-    .header__title {
-        font-size: 38px;
-        line-height: 48px;
-        margin-bottom: 15px;
-        color: #ffc;
-        text-shadow: 0 0 .1em, 0 0 .3em;
-
-    }
-
-    .header__citata {
-        font-size: 22px;
-        line-height: 38px;
-
-        color: #ffc;
-        text-shadow: 0 0 .1em, 0 0 .3em;
-    }
-
-       .header__title1 {
-       
-        line-height: 48px;
-        margin-bottom: 15px;  
-
-
-    }
-
-    .header__citata1 {
-        font-size: 22px;
-        line-height: 38px;
-    }
-
-       .header__title2 {
-        font-size: 38px;
-        line-height: 48px;
-
-        color: #ffc;
-        text-shadow: 0 0 .1em, 0 0 .3em;
-
-    }
-
-    .header__citata2 {
-        font-size: 22px;
-        line-height: 38px;
-
-        color: #ffc;
-        text-shadow: 0 0 .1em, 0 0 .3em;
-    }
-
-
-    .portfolio {
-        padding-top: 40px;
-        padding-bottom: 50px;
-    }
-
-    .title {
-        font-size: 36px;
-    }
+	.header__citata2 {
+		font-size: 22px;
+		line-height: 38px;
+	}
+	.portfolio {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.title {
+		font-size: 36px;
+	}
 }
 
-@media (max-width: 850px){
-.header__title, .header__title1, .header__title2 { 
-width: 100%;
- }
-.header__citata, .header__citata1, .header__citata2{
-width: 100%;
-}
-
+@media (max-width: 850px) {
+	.header__title,
+	.header__title1,
+	.header__title2 {
+		width: 100%;
+	}
+	.header__citata,
+	.header__citata1,
+	.header__citata2 {
+		width: 100%;
+	}
 }
 
 @media (max-width: 170px) {
-    .title {
-        font-size: 20px;
-    }
-
-    .portfolio-item__img img {
-        width: 80%;
-        height: 10vh;
-    }
+	.title {
+		font-size: 20px;
+	}
+	.portfolio-item__img img {
+		width: 80%;
+		height: 10vh;
+	}
 }
